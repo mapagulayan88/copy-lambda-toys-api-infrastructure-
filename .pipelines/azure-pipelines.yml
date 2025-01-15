@@ -24,7 +24,7 @@ stages:
     steps:
     - task: AzureCLI@2
       inputs:
-        azureSubscription: 'Azure Sponsorship'
+        azureSubscription: 'lambdatoys-svc-conn'
         scriptType: 'pscore'
         scriptLocation: 'inlineScript'
         inlineScript: |
@@ -42,7 +42,7 @@ stages:
     steps:
     - task: AzureCLI@2
       inputs:
-        azureSubscription: 'Azure Sponsorship'
+        azureSubscription: 'lambdatoys-svc-conn'
         scriptType: 'pscore'
         scriptLocation: 'inlineScript'
         inlineScript: |
@@ -65,7 +65,7 @@ stages:
           steps:
           - task: AzureCLI@2
             inputs:
-              azureSubscription: 'Azure Sponsorship'
+              azureSubscription: 'lambdatoys-svc-conn'
               scriptType: 'pscore'
               scriptLocation: 'inlineScript'
               inlineScript: |
